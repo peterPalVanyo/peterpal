@@ -1,0 +1,108 @@
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden; }
+  
+  .btnLight, .btnDark, .btnMain {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 1s;
+    border: none;
+    cursor: pointer; }
+  
+  .btnLight {
+    color: #333;
+    background: #f4f4f4; }
+  
+  .btnDark {
+    color: #f4f4f4;
+    background: #333; }
+  
+  .btnMain {
+    color: #f4f4f4;
+    background: #ffbc00; }
+  
+  button[class^='btn']:hover,
+  a[class^='btn']:hover,
+  input[class^='btn']:hover {
+    background-color: #ffbc00; }
+  
+  .lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem; }
+  
+  .textCenter {
+    text-align: center; }
+  
+  * {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #fff; }
+  
+  a {
+    text-decoration: none;
+    color: #333; }
+  
+  ul {
+    list-style: none; }
+  
+  h2, h3, h4 {
+    text-transform: uppercase; }
+  
+  img {
+    width: 100%; }
+  
+  #logo {
+    width: 80px;
+    height: 80px;}
+  
+  #mainNav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem; }
+    #mainNav ul {
+      display: flex; }
+    #mainNav li {
+      padding: 1rem 1.5rem; }
+    #mainNav a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 1s; }
+      #mainNav a:hover {
+        border-color: #ccc; }
+      #mainNav a.current {
+        border-color: #ffbc00; }
+  
+  #headerHome {
+    /* background: url("../img/backgroundIcon.png") no-repeat left center/cover; */
+    background-color: black;
+    height: 100vh;
+    color: #fff; }
+    #headerHome .headerContent {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      #headerHome .headerContent h1 {
+        padding-top: 3%;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        line-height: 1.2; }
+      #headerHome .headerContent p {
+        text-align: right;
+        padding: 0 2rem;
+      }
+      #headerHome .headerContent img {
+        padding-top: 3%;
+        max-height: 50%;
+        max-width: 50%;
+      }
