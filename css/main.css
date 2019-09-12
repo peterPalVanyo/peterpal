@@ -58,7 +58,7 @@
     width: 100%; }
   
   #logo {
-    width: 80px;
+    width: 120px;
     height: 80px;}
   
   #mainNav {
@@ -79,7 +79,7 @@
       #mainNav a:hover {
         border-color: #ccc; }
       #mainNav a.current {
-        border-color: #ffbc00; }
+        border-color: #e1daac; }
   
   #headerHome {
     /* background: url("../img/backgroundIcon.png") no-repeat left center/cover; */

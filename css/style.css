@@ -1,11 +1,11 @@
 :root {
-    --page1color: steelblue;
-    --page2color: tan;
-    --page3color: teal;
-    --page4color: slateblue;
     --animateSpeed: 2s;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
@@ -15,28 +15,31 @@ body {
     /* no scrollbar */
     overflow: hidden;
 }
-/* page colors */
-#page1 {background: var(--page1color)}
-#page2 {background: var(--page2color)}
-#page3 {background: var(--page3color)}
-#page4 {background: var(--page4color)}
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden; 
+}
 
 .page {
     display: flex;
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
-    padding: 0 4rem;
+    padding: 0 1rem;
 }
-.page h1 {
-    font-size: 4rem;
-    line-height: 1.2;
-    margin: 1rem;
+.box {
+    margin: 1rem auto;
+    padding-bottom: 1rem;
 }
-.page p {
-    font-size: 1.3rem;
+.page img {
+    max-height: 80%;
+    max-width: 80%;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)
 }
 .btn {
     display: inline-block;
@@ -45,7 +48,6 @@ body {
     color: #333;
     text-decoration: none;
     border: none;
-    margin-top: 1rem;
     font-size: 1.1rem;
     transition: all 0.3s ease-in;
 }
@@ -57,23 +59,4 @@ body {
     background: #f4f4f4;
     color: #333;
 }
-/* page animation */
-#page1 h1 {
-    transform: translateY(-1200px);
-    animation: heading var(--animateSpeed) forwards ease-in 1s;
-}
-#page1 p {
-    transform: translateX(-1800px);
-    animation: text var(--animateSpeed) forwards ease-in 3s;
-}
-/* keyframes */
-@keyframes heading {
-    to {
-        transform: translateY(0);
-    }
-}
-@keyframes text {
-    to {
-        transform: translateX(0);
-    }
-}
+
