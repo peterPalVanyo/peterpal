@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/prezi.css">
+    <link rel="stylesheet" href="../css/preziMenu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <title>Presentation</title>
+</head>
+<body>
+    <img src="../img/info1.png" id="info">
+    <div class="container">
+        <div class="menuWrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nostrum.    </p></li>
+                            <li><a href="index.html" class="btn">Back to VPP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page 1: intro -->
+        <section id="page1" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop301.jpg" alt="">
+                <div>
+                    <a href="#page2" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- page 2 -->
+        <section id="page2" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop302.jpg" alt="">
+                <div>   
+                    <a href="#page1" class="btn btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- page 3 -->
+        <section id="page3" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop303.jpg" alt="">
+                <div>
+                    <a href="#page2" class="btn  btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- page 4 -->
+
+        <section id="page4" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop304.jpg" alt="">
+                <div>
+                    <a href="#page3" class="btn  btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page5" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- page 5 -->
+        <section id="page5" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop305.jpg" alt="">
+                <div>
+                    <a href="#page4" class="btn  btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page6" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- page 6 -->
+
+        <section id="page6" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop306.jpg" alt="">
+                <div>
+                    <a href="#page5" class="btn  btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page7" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- page 7 -->
+    
+        <section id="page7" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop307.jpg" alt="">
+                <div>
+                    <a href="#page6" class="btn  btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page8" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- page 8 -->
+
+        <section id="page8" class="page">
+            <div class="box">
+                <img src="../img/oop3cv/oop308.jpg" alt="">
+                <div>
+                    <a href="#page7" class="btn btnDark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="#page1" class="btn">First Page </a>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  
+    <script>
+      // Smooth Scrolling
+      $('.btn').on('click', function(event) {
+          if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800
+            );
+          }
+        });
+    </script>
+</body>
+</html>
