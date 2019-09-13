@@ -144,14 +144,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-/*   grid-template-columns: repeat(2, 1fr);
-  /*   grid-template-areas:
-  'icon icon title'
-  'icon icon btn'
-  'text text text'
-  'text text text'; */
-/*   justify-content: center;
-  align-items: center; */
   background: #e1daac url(../img/oop2icon-02.svg) no-repeat center center;
   padding: 2rem 6rem;
 }
@@ -163,6 +155,11 @@
 }
 #try .card:nth-child(6) {
   background: #e1daac url(../img/oop06cv/oop06icon.png) no-repeat center center/cover;
+}
+
+#try .card:nth-child(1),
+#try .card:nth-child(4) {
+  background: #333;
 }
 
 .card img {
@@ -184,4 +181,8 @@
   text-align: center;
   opacity: 0.9;
   background: #fff;
+}
+/* contact */
+.contact {
+  
 }
