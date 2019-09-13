@@ -152,8 +152,17 @@
   'text text text'; */
 /*   justify-content: center;
   align-items: center; */
-  background: #e1daac url(../img/oop2icon-02.svg) no-repeat center center/cover;
+  background: #e1daac url(../img/oop2icon-02.svg) no-repeat center center;
   padding: 2rem 6rem;
+}
+#try .card:nth-child(3) {
+  background: #e1daac url(../img/oop3cv/oop03icon.svg) no-repeat center center;
+}
+#try .card:nth-child(5) {
+  background: #e1daac url(../img/oop05cv/oop05icon.png) no-repeat center center;
+}
+#try .card:nth-child(6) {
+  background: #e1daac url(../img/oop06cv/oop06icon.png) no-repeat center center/cover;
 }
 
 .card img {
